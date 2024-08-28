@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "es2022",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "ES2022",
     "rootDir": "./src",
-    "esModuleInterop": true,
+    "outDir": "./build",
+    "inlineSourceMap": true,
+    "inlineSources": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
   }
 }
