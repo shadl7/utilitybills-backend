@@ -1,10 +1,13 @@
 {
+  "ignore": [
+    "src/**/*.spec.ts"
+  ],
   "name": "payment-backend",
   "version": "1.0.0",
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "node --loader ts-node/esm --no-warnings=ExperimentalWarning src/main.ts"
+    "dev": "nodemon"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -16,6 +19,7 @@
     "@types/node": "^22.5.1",
     "eslint": "^9.9.1",
     "globals": "^15.9.0",
+    "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "tslib": "^2.7.0",
     "typescript": "^5.5.4",
