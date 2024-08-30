@@ -2,6 +2,6 @@
 import express from "express";
 export const globalRouter = express.Router();
 
-globalRouter.get("/api/v1/global", (req, res, next) => {
+globalRouter.get("/global", (req, res, next) => {
 
 });

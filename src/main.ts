@@ -8,9 +8,9 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use("/", personalRouter)
-app.use("/", globalRouter)
-app.use("/", authRouter)
+app.use("/api/v1", personalRouter)
+app.use("/api/v1", globalRouter)
+app.use("/api/v1", authRouter)
 
 app.use((req: express.Request, res: express.Response) => {
     res.status(404).send('Not Found')
